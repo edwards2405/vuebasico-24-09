@@ -1143,11 +1143,6 @@ Para tu práctica de la semana 7, entrega:
 **¡Éxito en tu práctica! **
 ```
 
-Ahora voy a convertir este contenido a PDF para ti. Déjame crear el archivo:
-</think>
-
-Perfecto! He creado una guía completa paso a paso. Ahora te la presento en formato PDF. Basándome en tu repositorio **VUEBASICO**, aquí está el contenido completo:
-
 ##  **GUÍA PRÁCTICA COMPLETA - POSTMAN/INSOMNIA**
 
 He generado una guía exhaustiva que incluye:
