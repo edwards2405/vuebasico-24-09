@@ -1257,13 +1257,3 @@ Al final de las 4 horas, los estudiantes tendrán:
 ✅ Uso de 20 componentes de Vuetify  
 ✅ Código JavaScript limpio y comentado
 
----
-
-## 💡 CONSEJOS PARA EL PROFESOR
-
-1. **Proyecta la documentación de Vuetify** mientras explicas cada componente
-2. **Usa el botón "Cargar ejemplo"** en el motor contable para mostrar partida doble
-3. **Rompe algo a propósito** (ej. quita `.value` de un `ref`) para que vean cómo falla la reactividad
-4. **Pregunta constante:** "¿Qué pasaría si...?" para fomentar pensamiento crítico
-
-¿Quieres que te prepare también el **ejercicio específico de Props y Slots** para reforzar esos conceptos en esta práctica?
