@@ -8,7 +8,8 @@ const menuItems = [
   { title: 'Dashboard', icon: 'mdi-view-dashboard', to: '/' },
   { title: 'Clientes', icon: 'mdi-account-group', to: '/clientes' },
   { title: 'Facturación', icon: 'mdi-receipt', to: '/facturacion' },
-  { title: 'Contabilidad', icon: 'mdi-calculator', to: '/contabilidad' }
+  { title: 'Contabilidad', icon: 'mdi-calculator', to: '/contabilidad' },
+  { title: 'Taller Sem 8', icon: 'mdi-rocket', to: '/motor-contable' }
 ]
 </script>
 <template>

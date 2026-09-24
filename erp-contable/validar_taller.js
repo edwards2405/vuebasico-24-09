@@ -7,8 +7,12 @@
  * Salida: Genera 'reporte_automatico.json' en la raíz del proyecto.
  */
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 console.log('🔍 Iniciando validación automática del Taller Semana 8...\n');
 
@@ -57,7 +61,7 @@ try {
   let apiContent = '';
   if (fs.existsSync(servicesDir)) {
     const files = fs.readdirSync(servicesDir);
-    const apiFile = files.find(f => f.includes('api') && f.endsWith('.js'));
+    const apiFile = files.find(f => f.toLowerCase().includes('api') && f.endsWith('.js'));
     
     if (apiFile) {
       resultados.pruebas.servicio_api_existe = true;
