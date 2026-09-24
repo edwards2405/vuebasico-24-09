@@ -129,12 +129,18 @@ const movimientos = ref([]);
 const cargando = ref(false);
 const error = ref(null);
 
+// Code review - Jaiker Figueredo: pregunta. nuevoMovimiento es un ref() de un
+// objeto. ¿Por qué no usaste reactive()? Con ref hay que acordarse de .value
+// en el script; con reactive() el objeto se muta directo.
 const nuevoMovimiento = ref({
   concepto: '',
   tipo: 'Ingreso',
   monto: ''
 });
 
+// Code review - Jaiker Figueredo: el try/catch/finally está bien resuelto.
+// Si Express está apagado, la UI muestra "El servidor no responde..." y el
+// finally siempre pone cargando en false, así el spinner no se queda pegado.
 // Cargar movimientos al inicio
 async function cargarMovimientos() {
   cargando.value = true;
@@ -157,6 +163,10 @@ async function cargarMovimientos() {
   }
 }
 
+// Code review - Jaiker Figueredo: sugerencia. Mientras cargando es true, la
+// tabla se reemplaza por el spinner (v-if / v-else). Al guardar un movimiento
+// el historial desaparece un momento. Convendría un estado de carga solo para
+// el botón Guardar y dejar la tabla visible.
 // Guardar nuevo movimiento
 async function guardarMovimiento() {
   if (!nuevoMovimiento.value.concepto || !nuevoMovimiento.value.monto) {
